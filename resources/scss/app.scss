@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+.main-wrapper{
+    height: calc(100vh - 56px);
+
+    //.table-container{
+        //border: 1px solid black;
+    //}
+}
+
+.show-wrapper{
+    .img-area{
+        width: 400px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.aside-nav{
+
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
