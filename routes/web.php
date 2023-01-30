@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::middleware(['auth', 'verified'])
@@ -28,8 +31,11 @@ Route::middleware(['auth', 'verified'])
     });
 
 
+
+
 require __DIR__ . '/auth.php';
+
 
 Route::get('{any?}', function () {
     return view('guest.home');
-})->where('any', '*')->name('home');
+})->where('any', '.*')->name('all');
