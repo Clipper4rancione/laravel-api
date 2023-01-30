@@ -10,8 +10,8 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        $project_array = Project::all();
+        $project_array = Project::with(['type', 'technologies'])->get();
 
-        return response()->json(compact('project_array'));
+        return response()->json($project_array);
     }
 }
