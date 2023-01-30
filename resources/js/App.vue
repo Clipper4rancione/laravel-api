@@ -6,6 +6,8 @@ export default {
 
 <template>
     <h1>SONO VUE</h1>
+    <br>
+    <router-view></router-view>
 </template>
 
 
